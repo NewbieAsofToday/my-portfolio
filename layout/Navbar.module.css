@@ -1,0 +1,98 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  padding: 10px 0;
+  width: 50%;
+  margin: 2rem 0;
+  min-width: 300px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.nav span {
+  display: inline-block;
+  transition: 0.4s ease;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+.logo {
+  transition: 0.4s ease;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+.links {
+  flex: 1;
+  width: min-content;
+}
+
+.links a {
+  margin-left: 12px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.4s;
+}
+.links a:hover {
+  transform: translateY(-3px);
+}
+.mode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10%;
+  cursor: pointer;
+  padding: 8px 10px;
+}
+.menu {
+  display: none;
+  font-size: 1.2rem;
+  transition: 1.4s;
+}
+@media (max-width: 779px) {
+  .links {
+    display: none;
+  }
+  .menu {
+    display: contents;
+  }
+}
+/* -----------------------hand wave */
+.wave:hover {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}

@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer>
-      <p>Copyright 2022 Ninja List </p>
-    </footer>
+    <div>
+      <p>This website is built with Next.JS</p>
+    </div>
   );
 };
 

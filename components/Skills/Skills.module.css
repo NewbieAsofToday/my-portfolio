@@ -1,0 +1,27 @@
+.container {
+  width: 50%;
+  margin-top: 2rem;
+  min-width: 250px;
+}
+.grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 779px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.gridItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.8rem;
+  margin: 0.5rem 0;
+}
+.gridItem p {
+  font-size: 1rem;
+  font-weight: bold;
+}

@@ -1,0 +1,75 @@
+.heroText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.8rem;
+  z-index: -1;
+}
+@media (max-width: 776px) {
+  .heroText {
+    font-size: 0.8rem;
+  }
+  .heroText span {
+    display: block;
+  }
+}
+
+.text {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.textclass {
+  color: red;
+}
+
+.t1 {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: type 2s steps(20, end), curser1 0.8s infinite;
+  border-right: 8px solid transparent;
+  animation-delay: 0;
+  transition: 0.2s;
+  /* animation-iteration-count: infinite; */
+  animation-duration: 2s;
+  /* animation */
+}
+
+.t1:active {
+  border-right: 8px solid transparent;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes curser {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: grey;
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+
+@keyframes curser1 {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: grey;
+  }
+  100% {
+    border-color: transparent;
+  }
+}
