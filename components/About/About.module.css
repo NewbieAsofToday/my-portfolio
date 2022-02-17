@@ -14,7 +14,6 @@
 @media (min-width: 2000px) {
   .container h1 {
     font-size: 2.5rem;
-    font-weight: 900;
   }
 }
 
@@ -25,7 +24,6 @@
   }
   .container h1 {
     font-size: 1.5rem;
-    font-weight: 900;
   }
   .desc {
     font-size: 1.1rem;

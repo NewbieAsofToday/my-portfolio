@@ -3,6 +3,10 @@
   margin-top: 2rem;
   min-width: 250px;
 }
+.container h1 {
+  font-size: 2.2rem;
+  font-weight: 900;
+}
 .grid {
   margin-top: 2rem;
   display: grid;
@@ -25,16 +29,34 @@
   .grid {
     grid-template-columns: repeat(6, 1fr);
   }
+  .container h1 {
+    font-size: 2.5rem;
+  }
   .gridItem {
     font-size: 4rem;
   }
 }
 
 @media (max-width: 1150px) {
+  .container {
+    width: 70%;
+  }
+  .container h1 {
+    font-size: 1.5rem;
+  }
   .grid {
     grid-template-columns: repeat(3, 1fr);
   }
   .gridItem {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    width: 90%;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
