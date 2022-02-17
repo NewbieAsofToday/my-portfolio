@@ -10,48 +10,47 @@ const Navbar = ({ setTheme, theme }) => {
   const [modal, setModal] = useState(false);
   return (
     <nav
-      className={styles.nav}
+      className={styles.container}
       style={{
         background: theme ? "rgba(32, 32, 35)" : "rgba(240, 231, 219)",
       }}
     >
-      <div className={styles.logo}>
-        Euger Bonete
-        <span className={styles.wave}>👋</span>
-      </div>
-      <div className={styles.links}>
-        <Link className='color' href='#projects'>
-          Projects
-        </Link>
-        <a className='color' href=''>
-          About
-        </a>
-        <a className='color' href={"#skills"}>
-          Skills
-        </a>
-        <style jsx>{`
-          .color {
-            color: ${theme ? "#fff" : "#000"};
-          }
-        `}</style>
-      </div>
-      <div className={styles.social}></div>
-      <div
-        className={styles.mode}
-        style={{
-          background: theme ? "#fbd38d" : "#805ad5",
-          color: theme ? "#000" : "#fff",
-        }}
-        onClick={() => setTheme(!theme)}
-      >
-        {theme ? (
-          <FiSun className={styles.sun} />
-        ) : (
-          <FiMoon className={styles.moon} />
-        )}
-      </div>
-      <div className={styles.menu} onClick={() => setModal(!modal)}>
-        {modal ? <GrClose /> : <CgMenuRightAlt />}
+      <div className={styles.nav}>
+        <div className={styles.logo}>
+          Euger Bonete
+          <span className={styles.wave}>👋</span>
+        </div>
+        <div className={styles.links}>
+          <a className='color' href={"#projects"}>
+            Projects
+          </a>
+          <a className='color' href={"#about"}>
+            About
+          </a>
+          <a className='color' href={"#skills"}>
+            Skills
+          </a>
+          <style jsx>{`
+            .color {
+              color: ${theme ? "#fff" : "#000"};
+            }
+          `}</style>
+        </div>
+        <div className={styles.social}></div>
+        <div onClick={() => setTheme(!theme)}>
+          {theme ? (
+            <div className={styles.sun}>
+              <FiSun />
+            </div>
+          ) : (
+            <div className={styles.moon}>
+              <FiMoon />
+            </div>
+          )}
+        </div>
+        <div className={styles.menu} onClick={() => setModal(!modal)}>
+          {modal ? <GrClose /> : <CgMenuRightAlt />}
+        </div>
       </div>
     </nav>
   );

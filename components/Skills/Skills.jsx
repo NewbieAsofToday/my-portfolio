@@ -9,7 +9,7 @@ import styles from "./Skills.module.css";
 const Skills = () => {
   return (
     <div id='skills' className={styles.container}>
-      <h1>Tech-Stack:</h1>
+      <h1>Tech-Stack</h1>
       <div className={styles.grid}>
         <div className={styles.gridItem}>
           <ImHtmlFive2 />

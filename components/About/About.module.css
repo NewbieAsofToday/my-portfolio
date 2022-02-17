@@ -3,12 +3,12 @@
   margin-top: 2rem;
 }
 .container h1 {
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   font-weight: 900;
 }
 .desc {
-  text-indent: 1.5rem;
-  font-size: 1.8rem;
+  text-indent: 1.2rem;
+  font-size: 1.3rem;
 }
 
 @media (min-width: 2000px) {
@@ -26,7 +26,7 @@
     font-size: 1.5rem;
   }
   .desc {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 
