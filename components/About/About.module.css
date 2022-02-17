@@ -1,8 +1,44 @@
 .container {
-  /* background-color: red; */
-  width: 50%;
+  width: 60%;
   margin-top: 2rem;
+}
+.container h1 {
+  font-size: 2.2rem;
+  font-weight: 900;
 }
 .desc {
   text-indent: 1.5rem;
+  font-size: 1.8rem;
+}
+
+@media (min-width: 2000px) {
+  .container h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+}
+
+@media (max-width: 1150px) {
+  .container {
+    width: 70%;
+    text-align: left;
+  }
+  .container h1 {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+  .desc {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    width: 80%;
+  }
+}
+@media (max-width: 350px) {
+  .container {
+    width: 90%;
+  }
 }

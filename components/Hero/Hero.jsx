@@ -5,7 +5,7 @@ import styles from "./Hero.module.css";
 const Hero = () => {
   return (
     <div className='container'>
-      <Image height={200} width={200} src='/cat.gif' alt='' />
+      <Image className='cat' height={265} width={265} src='/cat.gif' alt='' />
       <div className={styles.heroText}>
         <h2 className={(styles.text, styles.t1)}>
           Hello there, I am a

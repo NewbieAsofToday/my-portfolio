@@ -8,7 +8,7 @@ import { SiNextdotjs } from "react-icons/si";
 import styles from "./Skills.module.css";
 const Skills = () => {
   return (
-    <div className={styles.container}>
+    <div id='skills' className={styles.container}>
       <h1>Tech-Stack:</h1>
       <div className={styles.grid}>
         <div className={styles.gridItem}>

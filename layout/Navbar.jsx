@@ -11,18 +11,23 @@ const Navbar = ({ setTheme, theme }) => {
   return (
     <nav
       className={styles.nav}
-      style={{ background: theme ? "rgb(32, 32, 35)" : "rgb(240, 231, 219)" }}
+      style={{
+        background: theme ? "rgba(32, 32, 35)" : "rgba(240, 231, 219)",
+      }}
     >
       <div className={styles.logo}>
         Euger Bonete
         <span className={styles.wave}>👋</span>
       </div>
       <div className={styles.links}>
-        <a className='color' href=''>
-          Work
-        </a>
+        <Link className='color' href='#projects'>
+          Projects
+        </Link>
         <a className='color' href=''>
           About
+        </a>
+        <a className='color' href={"#skills"}>
+          Skills
         </a>
         <style jsx>{`
           .color {
@@ -47,7 +52,6 @@ const Navbar = ({ setTheme, theme }) => {
       </div>
       <div className={styles.menu} onClick={() => setModal(!modal)}>
         {modal ? <GrClose /> : <CgMenuRightAlt />}
-        {/* {modal ? <Menu theme={theme} /> : null} */}
       </div>
     </nav>
   );
