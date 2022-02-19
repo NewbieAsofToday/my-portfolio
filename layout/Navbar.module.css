@@ -1,119 +1,189 @@
 .container {
+  height: 10vh;
   width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: sticky;
   top: 0;
-  z-index: 1;
 }
+
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0;
-  margin-bottom: 2rem;
-  width: 60%;
-
-  font-size: 23px;
-}
-.nav span {
-  display: inline-block;
-  transition: 0.4s ease;
-  cursor: pointer;
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 10px;
+  position: relative;
 }
 
 .logo {
-  transition: 0.4s ease;
-  cursor: pointer;
-  font-weight: 800;
-}
-.logo:hover {
-  transform: scale(1.1);
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 .links {
   flex: 1;
-  width: min-content;
+  margin-left: 10px;
 }
 
 .links a {
-  margin-left: 12px;
   text-decoration: none;
-  display: inline-block;
+  margin-left: 10px;
   transition: 0.4s;
 }
+
 .links a:hover {
-  transform: translateY(-3px);
+  text-decoration: underline;
 }
+
 .sun,
 .moon {
+  padding: 10px 10px;
+  font-size: 1rem;
+  transition: 0.6s;
   border-radius: 10%;
-  padding: 8px 12px;
-
-  display: inline-block;
   cursor: pointer;
-  transition: 0.4s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .sun {
   background-color: #fbd38d;
-  color: black;
+  color: #000;
 }
+
 .sun:hover {
   background-color: #fabf58;
 }
+
 .moon {
   background-color: #805ad5;
-  color: white;
+  color: #fff;
 }
+
 .moon:hover {
-  background-color: rgb(41, 11, 104);
+  background-color: #592fbb;
 }
 
 .menu {
   display: none;
-  font-size: 1.2rem;
-  transition: 1.4s;
-}
-@media (min-width: 2000px) {
-  .nav {
-    width: 60%;
-    font-size: 30px;
-  }
-  .logo {
-    font-size: 2rem;
-  }
+  margin-left: 20px;
 }
 
-@media (max-width: 1150px) {
+.mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.spin {
+  -webkit-animation: rotate-center 0.6s ease-in-out both;
+  animation: rotate-center 0.6s ease-in-out both;
+}
+
+.flip {
+  -webkit-animation: flip-horizontal-bottom 0.4s
+    cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    both;
+}
+
+.menuItems {
+  position: absolute;
+  bottom: -130px;
+  right: 0;
+  padding: 15px;
+  z-index: 2;
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.menuItems a {
+  display: block;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+@media (max-width: 750px) {
   .nav {
-    width: 60%;
+    width: 90%;
   }
+  .menu {
+    display: flex;
+  }
+
   .links {
     display: none;
   }
-  .menu {
-    display: contents;
+}
+
+/* animation-flip */
+@-webkit-keyframes flip-horizontal-bottom {
+  0% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+  }
+}
+@keyframes flip-horizontal-bottom {
+  0% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
   }
 }
 
-@media (max-width: 650px) {
-  .nav {
-    font-size: 20px;
-    width: 80%;
+/* animation x */
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-@media (max-width: 350px) {
-  .nav {
-    font-size: 18px;
-    width: 100%;
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
   }
-  .logo {
-    min-width: 150px;
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* animation menu */
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
 }
 
 /* -----------------------hand wave */
-.logo:hover .wave {
+.wave {
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
   animation-duration: 2.5s; /* Change to speed up or slow down */
   animation-iteration-count: infinite; /* Never stop waving :) */

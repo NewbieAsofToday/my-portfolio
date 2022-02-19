@@ -2,7 +2,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import { FiSun } from "react-icons/fi";
-import { FiMoon } from "react-icons/fi";
+import { IoMdMoon } from "react-icons/io";
 import { CgMenuRightAlt } from "react-icons/cg";
 import { GrClose } from "react-icons/gr";
 import Menu from "../components/Menu/Menu";
@@ -37,19 +37,40 @@ const Navbar = ({ setTheme, theme }) => {
           `}</style>
         </div>
         <div className={styles.social}></div>
-        <div onClick={() => setTheme(!theme)}>
+        <div className={styles.mobile}>
           {theme ? (
-            <div className={styles.sun}>
+            <div className={styles.sun} onClick={() => setTheme(!theme)}>
               <FiSun />
             </div>
           ) : (
-            <div className={styles.moon}>
-              <FiMoon />
+            <div className={styles.moon} onClick={() => setTheme(!theme)}>
+              <IoMdMoon />
             </div>
           )}
-        </div>
-        <div className={styles.menu} onClick={() => setModal(!modal)}>
-          {modal ? <GrClose /> : <CgMenuRightAlt />}
+          <div className={styles.menu} onClick={() => setModal(!modal)}>
+            {modal ? (
+              <div className={styles.spin}>
+                <GrClose />
+              </div>
+            ) : (
+              <div className={styles.flip}>
+                <CgMenuRightAlt />
+              </div>
+            )}
+            {modal && (
+              <div
+                style={{
+                  background: theme ? "#fff" : "#333",
+                  color: theme ? "#000" : "#fff",
+                }}
+                className={styles.menuItems}
+              >
+                <a>Projects</a>
+                <a>About</a>
+                <a>Skills</a>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </nav>
