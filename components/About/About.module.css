@@ -1,41 +1,21 @@
 .container {
-  width: 60%;
-  margin-top: 2rem;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
 }
+
 .container h1 {
-  font-size: 1.6rem;
-  font-weight: 900;
-}
-.desc {
-  text-indent: 1.2rem;
-  font-size: 1.3rem;
+  margin-top: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
-@media (min-width: 2000px) {
-  .container h1 {
-    font-size: 2.5rem;
-  }
+.container p {
+  margin-top: 10px;
+  text-indent: 15px;
 }
 
-@media (max-width: 1150px) {
-  .container {
-    width: 70%;
-    text-align: left;
-  }
-  .container h1 {
-    font-size: 1.5rem;
-  }
-  .desc {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 650px) {
-  .container {
-    width: 80%;
-  }
-}
-@media (max-width: 350px) {
+@media (max-width: 750px) {
   .container {
     width: 90%;
   }

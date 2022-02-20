@@ -1,9 +1,16 @@
 import React from "react";
 import styles from "./About.module.css";
 import { FiHeart } from "react-icons/fi";
+import { motion } from "framer-motion";
 const About = () => {
   return (
-    <div id='about' className={styles.container}>
+    <motion.div
+      initial={{ y: "100vh" }}
+      animate={{ y: 0 }}
+      transition={{ type: "spring", stiffness: 120 }}
+      id='about'
+      className={styles.container}
+    >
       <h1>About me</h1>
       <p className={styles.desc}>
         I am Euger Bonete. I like to teach myself how to code. I am passionate
@@ -20,7 +27,7 @@ const About = () => {
         I <FiHeart />
       </h1>
       <p className={styles.desc}>Cats, Music, Drawing, Anime and Guitar.</p>
-    </div>
+    </motion.div>
   );
 };
 

@@ -14,7 +14,7 @@ export default function Home() {
         <meta name='keywords' content='ninjas' />
       </Head>
       <Hero />
-      <Contact />
+      {/* <Contact /> */}
       <About />
       <Skills />
       <Projects id='projects' />

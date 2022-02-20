@@ -14,39 +14,27 @@ const Projects = () => {
       </div>
       <style jsx>{`
         .container {
-          width: 60%;
+          width: 50%;
+          margin-top: 60px;
         }
         .title {
-          font-size: 1.6rem;
-          font-weight: 900;
+          margin-top: 20px;
+          font-weight: 600;
+          margin-bottom: 20px;
         }
         .projects {
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(2, 1fr);
           gap: 1.5rem;
         }
-        @media (min-width: 2000px) {
-          .projects {
-            grid-template-columns: repeat(3, 1fr);
-          }
-        }
-        @media (max-width: 1150px) {
+
+        @media (max-width: 750px) {
           .container {
-            width: 70%;
-          }
-          .projects {
-            grid-template-columns: repeat(2, 1fr);
-          }
-        }
-        @media (max-width: 650px) {
-          .container {
-            width: 80%;
+            width: 90%;
           }
           .projects {
             grid-template-columns: repeat(1, 1fr);
           }
-        }
-        @media (max-width: 350px) {
         }
       `}</style>
     </>

@@ -3,6 +3,7 @@
   width: 100vw;
   position: sticky;
   top: 0;
+  z-index: 11;
 }
 
 .nav {
@@ -18,10 +19,12 @@
 .logo {
   font-weight: bold;
   font-size: 1.2rem;
+  cursor: pointer;
 }
 .links {
   flex: 1;
   margin-left: 10px;
+  font-weight: 500;
 }
 
 .links a {
@@ -87,6 +90,11 @@
   animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955)
     both;
 }
+.flip2 {
+  -webkit-animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: swing-top-fwd 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
 
 .menuItems {
   position: absolute;
@@ -113,6 +121,36 @@
 
   .links {
     display: none;
+  }
+}
+
+/* sun and moon animation */
+@-webkit-keyframes flip-2-hor-top-1 {
+  0% {
+    -webkit-transform: translateY(0) rotateX(0);
+    transform: translateY(0) rotateX(0);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+  100% {
+    -webkit-transform: translateY(-100%) rotateX(-180deg);
+    transform: translateY(-100%) rotateX(-180deg);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+}
+@keyframes flip-2-hor-top-1 {
+  0% {
+    -webkit-transform: translateY(0) rotateX(0);
+    transform: translateY(0) rotateX(0);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+  100% {
+    -webkit-transform: translateY(-100%) rotateX(-180deg);
+    transform: translateY(-100%) rotateX(-180deg);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
   }
 }
 
@@ -183,7 +221,7 @@
 }
 
 /* -----------------------hand wave */
-.wave {
+.logo:hover span {
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
   animation-duration: 2.5s; /* Change to speed up or slow down */
   animation-iteration-count: infinite; /* Never stop waving :) */

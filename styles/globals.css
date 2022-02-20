@@ -16,6 +16,9 @@ body {
 h1 {
   font-size: 1.2rem;
   font-weight: 500;
-  border-bottom: 2px solid;
   width: fit-content;
+}
+h1:hover {
+  text-decoration: underline;
+  cursor: default;
 }

@@ -1,45 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700&display=swap");
 
 .heroText {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  z-index: -1;
-}
-/* @media (max-width: 776px) {
-  .heroText {
-    font-size: 0.8rem;
-  }
-  .heroText span {
-    display: block;
-  }
-} */
-@media (min-width: 2000px) {
-  .heroText {
-    font-size: 1.4rem;
-  }
+  font-family: "Source-Code", sans-serif;
+  font-weight: 600;
+  border: 1px solid;
+  padding: 10px 20px;
+  border-radius: 10px;
 }
 
-@media (max-width: 1150px) {
-  .heroText {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 650px) {
-  .heroText span {
-    display: block;
-  }
-  .heroText {
-    font-size: 0.8rem;
-  }
-}
-@media (max-width: 350px) {
-  .heroText {
-    width: 100vw;
-    margin-left: 4rem;
-  }
-}
 /* ------------------ */
 .text {
   margin: 0;
@@ -48,8 +16,9 @@
 }
 
 .t1 {
-  margin: 0;
-  white-space: nowrap;
+  margin: 0 auto;
+
+  white-space: wrap;
   font-family: "Source Code Pro", monospace;
   overflow: hidden;
   animation: type 2s steps(20, end), curser1 0.8s 5;

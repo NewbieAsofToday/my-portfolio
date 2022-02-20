@@ -4,10 +4,17 @@
   justify-content: center;
   flex-direction: column;
   cursor: pointer;
+  width: 300px;
+  text-align: center;
+}
+
+.container p {
+  font-size: 0.9rem;
+  margin-top: 10px;
 }
 
 .container:hover .card {
-  transform: scale(1.1);
+  transform: scale(1.03);
 }
 
 .card {
@@ -21,8 +28,8 @@
 }
 
 .title {
-  font-weight: 800;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .tagContainer {
@@ -35,33 +42,4 @@
   border-radius: 10px;
   padding: 0.5rem 1rem;
   margin-right: 0.5rem;
-}
-
-@media (min-width: 2000px) {
-  .card {
-    height: 200px;
-    width: 270px;
-  }
-}
-
-@media (max-width: 1150px) {
-  .card {
-    height: 150px;
-    width: 250px;
-  }
-  .title {
-    font-size: 1.1rem;
-  }
-}
-
-@media (max-width: 650px) {
-  .title {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 350px) {
-  .title {
-    font-size: 0.9rem;
-  }
 }

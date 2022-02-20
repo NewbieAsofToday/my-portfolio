@@ -4,7 +4,7 @@ import { useState } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "../theme/Theme";
 function MyApp({ Component, pageProps }) {
-  const [theme, setTheme] = useState(false);
+  const [theme, setTheme] = useState(true);
 
   return (
     <ThemeProvider theme={theme ? lightTheme : darkTheme}>

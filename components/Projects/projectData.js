@@ -8,6 +8,7 @@ export const projectList = [
     demo: "https://anime-app-v2.netlify.app/",
     github: "https://github.com/NewbieAsofToday/anime-app-search",
     image: "/restaurant.png",
+    short: "Fully Responsive Restaurant Website",
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ export const projectList = [
     demo: "https://anime-app-v2.netlify.app/",
     github: "https://github.com/NewbieAsofToday/anime-app-search",
     image: "/anime1.png",
+    short: "Anime website where you can search any anime",
   },
   {
     id: 3,
@@ -28,6 +30,7 @@ export const projectList = [
     demo: "https://anime-app-v2.netlify.app/",
     github: "https://github.com/NewbieAsofToday/anime-app-search",
     image: "/portfolio.png",
+    short: "My first portfolio",
   },
   {
     id: 4,
@@ -38,6 +41,7 @@ export const projectList = [
     demo: "https://anime-app-v2.netlify.app/",
     github: "https://github.com/NewbieAsofToday/anime-app-search",
     image: "/pokedex.png",
+    short: "Pokedex pulling data from external API",
   },
   {
     id: 5,
@@ -48,5 +52,6 @@ export const projectList = [
     demo: "https://anime-app-v2.netlify.app/",
     github: "https://github.com/NewbieAsofToday/anime-app-search",
     image: "/pepsi.png",
+    short: "Pepsi Landing Page",
   },
 ];

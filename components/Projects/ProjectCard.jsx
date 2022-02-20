@@ -1,19 +1,12 @@
 import React from "react";
 import styles from "./ProjectCard.module.css";
 const ProjectCard = ({ item }) => {
-  const { title, image, tags } = item;
+  const { title, image, short } = item;
   return (
     <div className={styles.container}>
-      <p className={styles.title}>{title}</p>
       <img className={styles.card} src={image} alt='' />
-
-      <div className={styles.tagContainer}>
-        {tags.map((tag, index) => (
-          <p key={tag + index + 1} className={styles.tag}>
-            {tag}
-          </p>
-        ))}
-      </div>
+      <h2 className={styles.title}>{title}</h2>
+      <p>{short}</p>
     </div>
   );
 };
