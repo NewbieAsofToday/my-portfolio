@@ -19,7 +19,7 @@ export const projectList = [
     demo: "https://anime-app-v2.netlify.app/",
     github: "https://github.com/NewbieAsofToday/anime-app-search",
     image: "/anime1.png",
-    short: "Anime website where you can search any anime",
+    short: "Find and search any anime info",
   },
   {
     id: 3,

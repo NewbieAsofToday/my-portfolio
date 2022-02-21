@@ -13,12 +13,25 @@ body {
   background-color: #f2f2f2;
   overflow-x: hidden;
 }
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
 h1 {
   font-size: 1.2rem;
   font-weight: 500;
   width: fit-content;
+  position: relative;
 }
-h1:hover {
-  text-decoration: underline;
-  cursor: default;
+h1::after {
+  content: "";
+  width: 50px;
+  height: 10px;
+  z-index: 100;
+  left: 0;
+  top: 21px;
+  border-bottom: 2px solid;
+  position: absolute;
 }

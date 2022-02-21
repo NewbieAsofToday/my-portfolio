@@ -2,9 +2,15 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div>
+    <footer className='foot'>
       <p>This website is built with Next.JS</p>
-    </div>
+      <style jsx>{`
+        .foot {
+          margin-top: 10rem;
+          height: 10vh;
+        }
+      `}</style>
+    </footer>
   );
 };
 

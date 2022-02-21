@@ -15,7 +15,7 @@ const Projects = () => {
       <style jsx>{`
         .container {
           width: 50%;
-          margin-top: 60px;
+          margin-top: 40px;
         }
         .title {
           margin-top: 20px;

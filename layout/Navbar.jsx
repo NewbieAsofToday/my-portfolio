@@ -5,6 +5,7 @@ import { FiSun } from "react-icons/fi";
 import { IoMdMoon } from "react-icons/io";
 import { CgMenuRightAlt } from "react-icons/cg";
 import { VscChromeClose } from "react-icons/vsc";
+import { FaCat } from "react-icons/fa";
 import { motion } from "framer-motion";
 const Navbar = ({ setTheme, theme }) => {
   const [modal, setModal] = useState(false);
@@ -22,23 +23,30 @@ const Navbar = ({ setTheme, theme }) => {
           transition={{ type: "spring", stiffness: 120 }}
           className={styles.logo}
         >
-          Euger Bonete
-          <span className={styles.wave}>👋</span>
+          <Link href={"/"}>
+            <a>
+              Euger Bonete
+              <span className={styles.wave}>
+                <FaCat />
+              </span>
+            </a>
+          </Link>
         </motion.div>
         <motion.div
           className={styles.links}
           initial={{ y: "-100vh" }}
           animate={{ y: 0 }}
         >
-          <a className='color' href={"#projects"}>
-            Projects
-          </a>
-          <a className='color' href={"#about"}>
-            About
-          </a>
-          <a className='color' href={"#skills"}>
-            Skills
-          </a>
+          <Link href={"/"}>
+            <a className='color'>Home</a>
+          </Link>
+          <Link href={"/projects"}>
+            <a className='color'>Projects</a>
+          </Link>
+          <Link href={"/contact"}>
+            <a className='color'>Contact</a>
+          </Link>
+
           <style jsx>{`
             .color {
               color: ${theme ? "#fff" : "#000"};
@@ -80,9 +88,15 @@ const Navbar = ({ setTheme, theme }) => {
                 }}
                 className={styles.menuItems}
               >
-                <a>Projects</a>
-                <a>About</a>
-                <a>Skills</a>
+                <Link href={"/"}>
+                  <a className='color'>Home</a>
+                </Link>
+                <Link href={"/projects"}>
+                  <a className='color'>Projects</a>
+                </Link>
+                <Link href={"/contact"}>
+                  <a className='color'>Contact</a>
+                </Link>
               </div>
             )}
           </div>

@@ -29,11 +29,11 @@ const Skills = () => {
         </div>
         <div className={styles.gridItem}>
           <FaReact />
-          <p>React JS</p>
+          <p>ReactJS</p>
         </div>
         <div className={styles.gridItem}>
           <SiNextdotjs />
-          <p>Next JS</p>
+          <p>NextJS</p>
         </div>
       </div>
     </div>
