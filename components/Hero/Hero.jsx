@@ -22,26 +22,21 @@ const Hero = () => {
         <span className={styles.bold}>Euger.</span>
       </h2>
       <p className={styles.p}>
-        <Link href=''>
-          <a className={styles.a}>
-            <BsGithub />
-          </a>
-        </Link>
-        <Link href=''>
-          <a className={styles.a}>
-            <BsTwitter />
-          </a>
-        </Link>
-        <Link href=''>
-          <a className={styles.a}>
-            <BsMessenger />
-          </a>
-        </Link>
-        <Link href=''>
-          <a className={styles.a}>
-            <SiGmail />
-          </a>
-        </Link>
+        <a href='https://github.com/newbieAsofToday/' className={styles.a}>
+          <BsGithub />
+        </a>
+
+        <a href='https://twitter.com/EugerBonete' className={styles.a}>
+          <BsTwitter />
+        </a>
+
+        <a href='https://web.facebook.com/euger.bonete.9' className={styles.a}>
+          <BsMessenger />
+        </a>
+
+        <a href='https://web.facebook.com/euger.bonete.9' className={styles.a}>
+          <SiGmail />
+        </a>
       </p>
       <style jsx>{`
         .container {
