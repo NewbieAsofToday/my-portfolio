@@ -4,8 +4,6 @@ import styles from "../styles/Contact.module.css";
 import Hero from "../components/Hero/Hero";
 
 const contact = () => {
-  const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -13,7 +11,7 @@ const contact = () => {
       .sendForm(
         "service_k73iuhd",
         "template_7yqv51p",
-        form.current,
+        e.target,
         "user_s9kcAcIs0xEN53FZGdHoi"
       )
       .then(
@@ -32,7 +30,7 @@ const contact = () => {
       <Hero />
       <div className={styles.container}>
         <h1>Contact </h1>
-        <form className={styles.form} ref={form} onSubmit={sendEmail}>
+        <form className={styles.form} onSubmit={sendEmail}>
           <div>
             <label>Name </label>
             <input type='text' name='name' />
