@@ -24,6 +24,7 @@ h1 {
   font-weight: 500;
   width: fit-content;
   position: relative;
+  cursor: default;
 }
 h1::after {
   content: "";

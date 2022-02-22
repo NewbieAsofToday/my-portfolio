@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import styles from "../styles/Contact.module.css";
 import Hero from "../components/Hero/Hero";
+import { motion } from "framer-motion";
 
 const contact = () => {
   const sendEmail = (e) => {
@@ -21,34 +22,41 @@ const contact = () => {
         (error) => {
           console.log(error.text);
         }
-      )
-      .then(alert("Message sent!"));
+      );
+    e.target.reset();
   };
 
   return (
-    <>
+    <motion.div
+      className={styles.container}
+      initial={{ y: "100vh" }}
+      animate={{ y: 0 }}
+      transition={{ type: "spring", stiffness: 120 }}
+    >
       <Hero />
-      <div className={styles.container}>
+      <div>
         <h1>Contact </h1>
         <form className={styles.form} onSubmit={sendEmail}>
-          <div>
+          <div className={styles.name}>
             <label>Name </label>
-            <input type='text' name='name' />
+            <input placeholder='Name' type='text' name='name' />
           </div>
-          <div>
+
+          <div className={styles.email}>
             <label>Email </label>
-            <input type='email' name='email' />
+            <input placeholder='@gmail.com' type='email' name='email' />
           </div>
-          <div>
+
+          <div className={styles.message}>
             <label>Message </label>
-            <textarea name='message' rows='10' cols='30' />
+            <textarea placeholder='Message' name='message' rows='6' cols='20' />
           </div>
-          <div>
+          <div className={styles.send}>
             <input type='submit' value='Send' />
           </div>
         </form>
       </div>
-    </>
+    </motion.div>
   );
 };
 

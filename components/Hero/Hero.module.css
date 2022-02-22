@@ -4,6 +4,15 @@
   font-family: monospace;
   font-weight: 600;
   font-size: 22px;
+  cursor: default;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+  .heroText {
+    width: 90%;
+  }
 }
 .heroText span {
   display: inline-block;

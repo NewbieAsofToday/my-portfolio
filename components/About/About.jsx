@@ -23,6 +23,12 @@ const About = () => {
         I am a fast learner and so far I am enjoying my web development journey
         and I am improving my coding skills everyday by building projects.
       </p>
+      <p>
+        Download my &nbsp;
+        <span className={styles.download}>
+          <strong>Resume</strong>.
+        </span>
+      </p>
       <h1>
         I <FiHeart />
       </h1>

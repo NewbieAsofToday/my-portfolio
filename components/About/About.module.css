@@ -15,6 +15,15 @@
   text-indent: 15px;
 }
 
+.download {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.download:hover {
+  color: rgb(0, 110, 255);
+}
+
 @media (max-width: 750px) {
   .container {
     width: 90%;

@@ -6,6 +6,7 @@ import { BsGithub } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
 import { BsMessenger } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
+import { GiHand } from "react-icons/gi";
 
 const Hero = () => {
   return (
@@ -18,23 +19,43 @@ const Hero = () => {
         alt=''
       />
       <h2 className={styles.heroText}>
-        Hello, <span className={styles.span}>👋</span> my name is
-        <span className={styles.bold}>Euger.</span>
+        Hello,{" "}
+        <span className={styles.span}>
+          {/* 👋 */}
+          <GiHand />
+        </span>{" "}
+        I'm a front-end developer.
       </h2>
       <p className={styles.p}>
-        <a href='https://github.com/newbieAsofToday/' className={styles.a}>
+        <a
+          href='https://github.com/newbieAsofToday/'
+          target='_blank'
+          className={styles.a}
+        >
           <BsGithub />
         </a>
 
-        <a href='https://twitter.com/EugerBonete' className={styles.a}>
+        <a
+          href='https://twitter.com/EugerBonete'
+          target='_blank'
+          className={styles.a}
+        >
           <BsTwitter />
         </a>
 
-        <a href='https://web.facebook.com/euger.bonete.9' className={styles.a}>
+        <a
+          href='https://web.facebook.com/euger.bonete.9'
+          target='_blank'
+          className={styles.a}
+        >
           <BsMessenger />
         </a>
 
-        <a href='https://web.facebook.com/euger.bonete.9' className={styles.a}>
+        <a
+          href='https://web.facebook.com/euger.bonete.9'
+          target='_blank'
+          className={styles.a}
+        >
           <SiGmail />
         </a>
       </p>
