@@ -19,17 +19,18 @@ const Hero = () => {
         alt=''
       />
       <h2 className={styles.heroText}>
-        Hello,{" "}
+        Hello,
         <span className={styles.span}>
           {/* 👋 */}
           <GiHand />
-        </span>{" "}
-        I'm a front-end developer.
+        </span>
+        I&apos;m a front-end developer.
       </h2>
       <p className={styles.p}>
         <a
           href='https://github.com/newbieAsofToday/'
           target='_blank'
+          rel='noreferrer'
           className={styles.a}
         >
           <BsGithub />
@@ -38,6 +39,7 @@ const Hero = () => {
         <a
           href='https://twitter.com/EugerBonete'
           target='_blank'
+          rel='noreferrer'
           className={styles.a}
         >
           <BsTwitter />
@@ -46,6 +48,7 @@ const Hero = () => {
         <a
           href='https://web.facebook.com/euger.bonete.9'
           target='_blank'
+          rel='noreferrer'
           className={styles.a}
         >
           <BsMessenger />
@@ -54,6 +57,7 @@ const Hero = () => {
         <a
           href='https://web.facebook.com/euger.bonete.9'
           target='_blank'
+          rel='noreferrer'
           className={styles.a}
         >
           <SiGmail />
