@@ -27,36 +27,43 @@ const contact = () => {
   };
 
   return (
-    <motion.div
-      className={styles.container}
-      initial={{ y: "100vh" }}
-      animate={{ y: 0 }}
-      transition={{ type: "spring", stiffness: 120 }}
-    >
+    <>
       <Hero />
-      <div>
-        <h1>Contact </h1>
-        <form className={styles.form} onSubmit={sendEmail}>
-          <div className={styles.name}>
-            <label>Name </label>
-            <input placeholder='Name' type='text' name='name' />
-          </div>
+      <motion.div
+        className={styles.container}
+        initial={{ y: "100vh" }}
+        animate={{ y: 0 }}
+        transition={{ type: "spring", stiffness: 120 }}
+      >
+        <div>
+          <h1>Contact </h1>
+          <form className={styles.form} onSubmit={sendEmail}>
+            <div className={styles.name}>
+              <label>Name </label>
+              <input placeholder='Name' type='text' name='name' />
+            </div>
 
-          <div className={styles.email}>
-            <label>Email </label>
-            <input placeholder='@gmail.com' type='email' name='email' />
-          </div>
+            <div className={styles.email}>
+              <label>Email </label>
+              <input placeholder='@gmail.com' type='email' name='email' />
+            </div>
 
-          <div className={styles.message}>
-            <label>Message </label>
-            <textarea placeholder='Message' name='message' rows='6' cols='20' />
-          </div>
-          <div className={styles.send}>
-            <input type='submit' value='Send' />
-          </div>
-        </form>
-      </div>
-    </motion.div>
+            <div className={styles.message}>
+              <label>Message </label>
+              <textarea
+                placeholder='Message'
+                name='message'
+                rows='6'
+                cols='20'
+              />
+            </div>
+            <div className={styles.send}>
+              <input type='submit' value='Send' />
+            </div>
+          </form>
+        </div>
+      </motion.div>
+    </>
   );
 };
 
