@@ -26,7 +26,17 @@ const About = () => {
       <p>
         Download my &nbsp;
         <span className={styles.download}>
-          <strong>Resume</strong>.
+          <strong>
+            <a
+              href='/resume.pdf'
+              alt='resume'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Resume
+            </a>
+          </strong>
+          .
         </span>
       </p>
       <h1>
