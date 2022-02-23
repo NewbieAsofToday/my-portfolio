@@ -38,7 +38,7 @@ export const projectList = [
     about:
       "This is a project built with ReactJS that uses an API to display data.This project uses react hooks such as useState and useEffects. I also used styled-components for styling.",
     tags: ["ReactJs", "styled-components"],
-    demo: "https://anime-app-v2.netlify.app/",
+    demo: "https://pokedex-newbieasoftoday.vercel.app/",
     github: "https://github.com/NewbieAsofToday/anime-app-search",
     image: "/pokedex.png",
     short: "Pokedex pulling data from external API",
@@ -49,13 +49,24 @@ export const projectList = [
     about:
       "This is a project built with ReactJS that uses an API to display data.This project uses react hooks such as useState and useEffects. I also used styled-components for styling.",
     tags: ["ReactJs", "styled-components"],
-    demo: "https://anime-app-v2.netlify.app/",
+    demo: "https://6206b130c1c3ff29190c41cb--azkpepsi.netlify.app/",
     github: "https://github.com/NewbieAsofToday/anime-app-search",
     image: "/pepsi.png",
     short: "Pepsi Landing Page",
   },
   {
     id: 5,
+    title: "Tesla Clone",
+    about:
+      "This is a project built with ReactJS that uses an API to display data.This project uses react hooks such as useState and useEffects. I also used styled-components for styling.",
+    tags: ["ReactJs", "styled-components"],
+    demo: "https://ttesla.netlify.app/",
+    github: "https://github.com/NewbieAsofToday/anime-app-search",
+    image: "/car1.png",
+    short: "Under Construction",
+  },
+  {
+    id: 6,
     title: "Ani-Search v.2",
     about:
       "This is a project built with ReactJS that uses an API to display data.This project uses react hooks such as useState and useEffects. I also used styled-components for styling.",
