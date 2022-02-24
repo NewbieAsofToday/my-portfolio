@@ -11,13 +11,7 @@ import { GiHand } from "react-icons/gi";
 const Hero = () => {
   return (
     <div className='container'>
-      <Image
-        className='cat'
-        width={"200vw"}
-        height={"200vh"}
-        src='/cat.gif'
-        alt=''
-      />
+      <img className='cat' src='/cat.gif' alt='' />
       <h2 className={styles.heroText}>
         Hello,
         <span className={styles.span}>
@@ -74,6 +68,8 @@ const Hero = () => {
         }
         .cat {
           z-index: 0;
+          width: 200px;
+          height: 200px;
         }
       `}</style>
     </div>
