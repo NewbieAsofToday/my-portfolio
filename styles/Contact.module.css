@@ -52,4 +52,21 @@
   background: none;
   border: none;
   color: unset;
+  cursor: pointer;
+}
+
+.social {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 750px) {
+  .container {
+    width: 90%;
+  }
 }

@@ -126,36 +126,6 @@
   }
 }
 
-/* sun and moon animation */
-@-webkit-keyframes flip-2-hor-top-1 {
-  0% {
-    -webkit-transform: translateY(0) rotateX(0);
-    transform: translateY(0) rotateX(0);
-    -webkit-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
-  }
-  100% {
-    -webkit-transform: translateY(-100%) rotateX(-180deg);
-    transform: translateY(-100%) rotateX(-180deg);
-    -webkit-transform-origin: 50% 100%;
-    transform-origin: 50% 100%;
-  }
-}
-@keyframes flip-2-hor-top-1 {
-  0% {
-    -webkit-transform: translateY(0) rotateX(0);
-    transform: translateY(0) rotateX(0);
-    -webkit-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
-  }
-  100% {
-    -webkit-transform: translateY(-100%) rotateX(-180deg);
-    transform: translateY(-100%) rotateX(-180deg);
-    -webkit-transform-origin: 50% 100%;
-    transform-origin: 50% 100%;
-  }
-}
-
 /* animation-flip */
 @-webkit-keyframes flip-horizontal-bottom {
   0% {

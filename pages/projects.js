@@ -2,6 +2,7 @@ import React from "react";
 import Projects from "../components/Projects/Projects";
 import { motion } from "framer-motion";
 import Hero from "../components/Hero/Hero";
+
 const projects = () => {
   return (
     <>

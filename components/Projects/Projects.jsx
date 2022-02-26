@@ -1,21 +1,40 @@
 import React from "react";
 import { projectList } from "./projectData";
 import ProjectCard from "./ProjectCard";
+
+import { Reveal } from "react-awesome-reveal";
+import { keyframes } from "@emotion/react";
+
+const customAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY( 100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
 const Projects = () => {
   return (
     <>
-      <div className='container'>
-        <h1 className='title'>Projects</h1>
+      <div className='container' id='projects'>
+        <Reveal keyframes={customAnimation}>
+          <h1 className='title'>Selected Works </h1>
+        </Reveal>
       </div>
-      <div id='projects' className='projects'>
-        {projectList.map((item) => {
-          return <ProjectCard item={item} key={item.id} />;
-        })}
-      </div>
+      <Reveal keyframes={customAnimation} delay={250}>
+        <div className='projects'>
+          {projectList.map((item) => {
+            return <ProjectCard item={item} key={item.id} />;
+          })}
+        </div>
+      </Reveal>
       <style jsx>{`
         .container {
           width: 50%;
-          margin-top: 40px;
+          padding-top: 12vh;
         }
         .title {
           margin-top: 20px;

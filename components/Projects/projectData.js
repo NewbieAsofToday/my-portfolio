@@ -3,7 +3,7 @@ export const projectList = [
     id: 1,
     title: "Gericht",
     about:
-      "This is a project built with ReactJS that uses an API to display data.This project uses react hooks such as useState and useEffects. I also used styled-components for styling.",
+      "This a restaurant website built with React JS. It is completely mobile responsive. As for the styling in this project I used CSS BEM model method to write my CSS. This project uses react hooks such as useState, useRef and useEffects. ",
     tags: ["React JS"],
     demo: "http://gerichtgericht.netlify.app/",
     github: "https://github.com/NewbieAsofToday/anime-app-search",
@@ -14,7 +14,7 @@ export const projectList = [
     id: 2,
     title: "AniSearch",
     about:
-      "This is a project built with ReactJS that uses an API to display data.This project uses react hooks such as useState and useEffects. I also used styled-components for styling.",
+      "This is an anime website where you can find or search info about any anime. This project is built with ReactJS that uses an external API to display data.This project uses react hooks such as useState and useEffects. I used styled-components for styling.",
     tags: ["ReactJs", "External API"],
     demo: "http://ani-search.netlify.app/",
     github: "https://github.com/NewbieAsofToday/anime-app-search",
@@ -55,10 +55,9 @@ export const projectList = [
     short: "Pepsi Landing Page",
   },
   {
-    id: 5,
+    id: 6,
     title: "Tesla Clone",
-    about:
-      "This is a project built with ReactJS that uses an API to display data.This project uses react hooks such as useState and useEffects. I also used styled-components for styling.",
+    about: "This is a project built with ReactJS and styled-components.",
     tags: ["ReactJs", "styled-components"],
     demo: "https://ttesla.netlify.app/",
     github: "https://github.com/NewbieAsofToday/anime-app-search",
@@ -66,7 +65,7 @@ export const projectList = [
     short: "Under Construction",
   },
   {
-    id: 6,
+    id: 7,
     title: "Ani-Search v.2",
     about:
       "This is a project built with ReactJS that uses an API to display data.This project uses react hooks such as useState and useEffects. I also used styled-components for styling.",
