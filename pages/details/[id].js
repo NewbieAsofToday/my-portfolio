@@ -67,7 +67,11 @@ const DetailsPage = ({ item }) => {
         </div>
         <div className={styles.tags}>
           {item.tags.map((tag) => {
-            return <p className={styles.tag}>{tag}</p>;
+            return (
+              <p key={tag} className={styles.tag}>
+                {tag}
+              </p>
+            );
           })}
         </div>
         <div className={styles.desc}>
