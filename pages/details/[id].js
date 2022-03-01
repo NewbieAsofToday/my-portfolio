@@ -2,8 +2,8 @@ import Link from "next/link";
 import React from "react";
 import { projectList } from "../../components/Projects/projectData";
 import styles from "./DetailsPage.module.css";
-import { BsGithub } from "react-icons/bs";
-import { GiTv } from "react-icons/gi";
+import { BsCode } from "react-icons/bs";
+import { FaEye } from "react-icons/fa";
 import { BsArrowLeft } from "react-icons/bs";
 
 import { Reveal } from "react-awesome-reveal";
@@ -50,21 +50,13 @@ const DetailsPage = ({ item }) => {
       <Reveal className={styles.container} keyframes={customAnimation}>
         <div className={styles.title}>
           <span>
-            <Link href={"/"}>
+            <Link href={"#projects"}>
               <BsArrowLeft />
             </Link>
           </span>
           <h1>{item.title}</h1>
         </div>
         <img className={styles.image} src={item.image} alt='' />
-        <div className={styles.links}>
-          <a href={item.demo} target='_blank' rel='noreferrer'>
-            Live: <GiTv />
-          </a>
-          <a href={item.demo} target='_blank' rel='noreferrer'>
-            Github: <BsGithub />
-          </a>
-        </div>
         <div className={styles.tags}>
           {item.tags.map((tag) => {
             return (
@@ -75,7 +67,19 @@ const DetailsPage = ({ item }) => {
           })}
         </div>
         <div className={styles.desc}>
-          <p>{item.about}</p>
+          <p style={{ lineHeight: "30px" }}>{item.about}</p>
+        </div>
+        <div className={styles.links}>
+          <div>
+            <a href={item.demo} target='_blank' rel='noreferrer'>
+              <FaEye /> Demo
+            </a>
+          </div>
+          <div>
+            <a href={item.demo} target='_blank' rel='noreferrer'>
+              <BsCode /> Code
+            </a>
+          </div>
         </div>
       </Reveal>
     </>
