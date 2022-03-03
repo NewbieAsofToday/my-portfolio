@@ -8,7 +8,7 @@ export const projectList = [
     demo: "https://ccoffee.netlify.app/",
     github: "https://github.com/NewbieAsofToday/anime-app-search",
     image: "/coffee.png",
-    short: "Fully Responsive Restaurant Website",
+    short: "Fully Responsive Coffee Website",
   },
   {
     id: 2,
