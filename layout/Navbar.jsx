@@ -55,7 +55,7 @@ const Navbar = ({ setTheme, theme }) => {
         <div className={styles.nav}>
           <div className={styles.logo}>
             <Link href={"/"}>
-              <a>
+              <a style={{ color: theme ? "white" : "black" }}>
                 Euger Bonete
                 <span className={styles.wave}>
                   <FaCat />
