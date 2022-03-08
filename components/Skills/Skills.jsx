@@ -24,8 +24,8 @@ const customAnimation = keyframes`
 const Skills = () => {
   return (
     <div id='skills' className={styles.container}>
-      <Reveal keyframes={customAnimation}>
-        <Reveal keyframes={customAnimation}>
+      <Reveal keyframes={customAnimation} triggerOnce>
+        <Reveal keyframes={customAnimation} triggerOnce>
           <h1>Tech-Stack</h1>
         </Reveal>
 

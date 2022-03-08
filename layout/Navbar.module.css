@@ -119,6 +119,7 @@
   }
   .menu {
     display: flex;
+    cursor: pointer;
   }
 
   .links {

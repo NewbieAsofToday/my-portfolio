@@ -20,11 +20,11 @@ const Projects = () => {
   return (
     <>
       <div className='container' id='projects'>
-        <Reveal keyframes={customAnimation}>
+        <Reveal keyframes={customAnimation} triggerOnce>
           <h1 className='title'>Selected Works </h1>
         </Reveal>
       </div>
-      <Reveal keyframes={customAnimation} delay={250}>
+      <Reveal keyframes={customAnimation} triggerOnce delay={250}>
         <div className='projects'>
           {projectList.map((item) => {
             return <ProjectCard item={item} key={item.id} />;

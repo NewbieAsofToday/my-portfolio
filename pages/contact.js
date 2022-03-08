@@ -102,7 +102,12 @@ const Contact = () => {
 
               <div className={styles.email}>
                 <label>Email </label>
-                <input placeholder='@gmail.com' type='email' name='email' />
+                <input
+                  placeholder='@gmail.com'
+                  type='email'
+                  name='email'
+                  required
+                />
               </div>
 
               <div className={styles.message}>
@@ -112,6 +117,7 @@ const Contact = () => {
                   name='message'
                   rows='6'
                   cols='20'
+                  required
                 />
               </div>
               <div className={styles.send}>

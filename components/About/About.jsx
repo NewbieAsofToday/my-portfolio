@@ -19,8 +19,8 @@ const customAnimation = keyframes`
 const About = () => {
   return (
     <div id='about' className={styles.container}>
-      <Reveal keyframes={customAnimation}>
-        <Reveal keyframes={customAnimation} delay={250}>
+      <Reveal keyframes={customAnimation} triggerOnce>
+        <Reveal keyframes={customAnimation} triggerOnce delay={250}>
           <h1>About me</h1>
         </Reveal>
         <p className={styles.desc}>
