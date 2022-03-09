@@ -20,9 +20,10 @@
 .download {
   text-decoration: underline;
   cursor: pointer;
+  color: unset;
 }
 
-.download:hover {
+.download a {
   color: rgb(0, 110, 255);
 }
 
