@@ -50,7 +50,7 @@ const DetailsPage = ({ item }) => {
       <Reveal className={styles.container} keyframes={customAnimation}>
         <div className={styles.title}>
           <span>
-            <Link href={"#projects"}>
+            <Link href={"/"}>
               <BsArrowLeft />
             </Link>
           </span>
